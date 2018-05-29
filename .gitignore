@@ -1,0 +1,11 @@
+/target
+/logs
+/.secrets
+/secrets
+
+.settings
+.project
+.classpath
+
+/src/main/resources/config/*.properties
+/src/main/resources/config/*.xml

@@ -14,9 +14,7 @@ public class MessageSourceConfig {
 
         source.setBasenames(
                 "common-messages",
-                "messages",
-                "i18n/common-messages",
-                "i18n/messages");
+                "messages");
 
         source.setAlwaysUseMessageFormat(true);
         source.setUseCodeAsDefaultMessage(true);

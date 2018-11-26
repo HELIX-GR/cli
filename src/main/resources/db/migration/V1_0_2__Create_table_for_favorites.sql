@@ -2,6 +2,9 @@
 -- Favorites
 --
 
+DROP TABLE IF EXISTS web.favorite;
+DROP SEQUENCE IF EXISTS web.favorite_id_seq;
+
 CREATE SEQUENCE web.favorite_id_seq INCREMENT 1 MINVALUE 1 START 1 CACHE 1;
 
 CREATE TABLE web.favorite
@@ -16,5 +19,5 @@ CREATE TABLE web.favorite
   "title" character varying NOT NULL,
   "description" character varying NULL,
   CONSTRAINT pk_favorite PRIMARY KEY (id),
-  CONSTRAINT uq_favorite_handle UNIQUE ("handle")
+  CONSTRAINT uq_favorite_handle UNIQUE ("email", "catalog", "handle")
 );

@@ -5,15 +5,18 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
+    <groupId>gr.helix</groupId>
     <artifactId>helix-core-cli</artifactId>
+    <version>1.0.0</version>
     <name>[helix-core] Client</name>
 
     <packaging>jar</packaging>
 
     <parent>
-      <groupId>gr.helix</groupId>
-      <artifactId>helix-core-parent</artifactId>
-      <version>1.0.0</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath />
     </parent>
 
     <dependencies>
